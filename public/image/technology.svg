@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" fill="none">
+  <defs>
+    <linearGradient id="night" x1="450" y1="0" x2="450" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071C38"/><stop offset=".58" stop-color="#075276"/><stop offset="1" stop-color="#29A5B0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 240 -310 0 450 227)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66E6E0" stop-opacity=".8"/><stop offset="1" stop-color="#28A9CF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#night)" d="M0 0h900v420H0z"/>
+  <path fill="url(#glow)" d="M0 0h900v420H0z"/>
+  <g fill="#C5F8F5" fill-opacity=".8">
+    <circle cx="125" cy="70" r="2"/><circle cx="242" cy="115" r="2"/><circle cx="337" cy="55" r="2"/>
+    <circle cx="571" cy="76" r="2"/><circle cx="742" cy="103" r="2"/><circle cx="822" cy="52" r="2"/>
+    <circle cx="195" cy="212" r="2"/><circle cx="694" cy="203" r="2"/><circle cx="775" cy="266" r="2"/>
+  </g>
+  <path d="M0 342c142-30 226-13 351 8 191 33 347-43 549-10v80H0v-78Z" fill="#071C32" fill-opacity=".58"/>
+  <path d="M352 219c0-54 44-98 98-98s98 44 98 98v66c0 54-44 98-98 98s-98-44-98-98v-66Z" stroke="#A8F5EC" stroke-opacity=".62" stroke-width="5"/>
+  <path d="M378 220c0-40 32-72 72-72s72 32 72 72v63c0 40-32 72-72 72s-72-32-72-72v-63Z" fill="#8FE7DC" fill-opacity=".16" stroke="#D1FFF3" stroke-opacity=".82" stroke-width="3"/>
+  <path d="M379 252c44 13 99 13 142 0m-139 39c42-11 95-11 136 0m-68-143v207m-55-168c36 22 75 82 102 145m7-145c-35 22-74 82-101 145" stroke="#C9FFF6" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M414 366c12-24 25-35 38-37 13 2 26 13 38 37" stroke="#DAFFF6" stroke-width="4"/>
+  <path d="M232 256h119m198 0h119M450 62v57m0 264v33M305 115l49 49m192 192 49 49m0-290-49 49m-192 192-49 49" stroke="#83E6E0" stroke-opacity=".7" stroke-width="2"/>
+  <g fill="#A9FFF0" stroke="#E1FFF7" stroke-width="2">
+    <circle cx="232" cy="256" r="8"/><circle cx="668" cy="256" r="8"/><circle cx="450" cy="62" r="8"/>
+    <circle cx="450" cy="353" r="8"/><circle cx="305" cy="115" r="8"/><circle cx="595" cy="405" r="8"/>
+    <circle cx="595" cy="115" r="8"/><circle cx="305" cy="405" r="8"/>
+  </g>
+  <path d="M0 387h900" stroke="#A6F5E9" stroke-opacity=".2" stroke-width="2"/>
+</svg>
