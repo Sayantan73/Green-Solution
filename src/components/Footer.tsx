@@ -5,9 +5,9 @@ const linkGroups = [
 
 const socialLinks = [
   { name: 'Facebook', icon: <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z" /> },
-  { name: 'LinkedIn', icon: <><path d="M6.5 9.5v8M6.5 6.5v.1M10.5 17.5v-8h3v1.2a3 3 0 0 1 5.5 1.8v5" /><circle cx="6.5" cy="6.5" r="1" /></> },
-  { name: 'X', icon: <path d="m5 4 14 16M19 4 5 20" /> },
-  { name: 'YouTube', icon: <><path d="M22 8.1a2.8 2.8 0 0 0-2-2C18.2 5.6 12 5.6 12 5.6s-6.2 0-8 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1.5 12a29 29 0 0 0 .5 3.9 2.8 2.8 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-3.9 29 29 0 0 0-.5-3.9Z" /><path d="m10 15.5 5-3.5-5-3.5v7Z" fill="#ffffff" /></> },
+  { name: 'LinkedIn', icon: <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0Z" /> },
+  { name: 'X', icon: <path d="M18.9 1.2h3.7l-8.1 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.5h2L6.5 3.2h-2l13.1 17.5Z" /> },
+  { name: 'YouTube', icon: <><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12s0-3.9-.5-5.8Z" /><path d="m9.6 15.5 6.3-3.5-6.3-3.5v7Z" fill="#ffffff" /></> },
 ] as const
 
 function Brand() {
@@ -54,8 +54,8 @@ export default function Footer() {
           <h3 className="mb-3 text-sm font-bold">Follow Us</h3>
           <div className="flex gap-2">
             {socialLinks.map(({ name, icon }) => (
-              <a key={name} href="#contact" aria-label={`Follow us on ${name}`} className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#0d2b1d] transition hover:bg-lime-300">
-                <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill={name === 'LinkedIn' || name === 'X' ? 'none' : 'currentColor'} stroke={name === 'LinkedIn' || name === 'X' ? 'currentColor' : 'none'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <a key={name} href="#contact" aria-label={`Follow us on ${name}`} className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#0d2b1d] transition duration-300 hover:scale-110 hover:bg-lime-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-300 motion-reduce:transition-none">
+                <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="currentColor" aria-hidden="true">
                   {icon}
                 </svg>
               </a>

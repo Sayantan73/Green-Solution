@@ -33,8 +33,8 @@ export default function Services() {
       </div>
       <div className="grid gap-5 md:grid-cols-3">
         {services.map(({ title, description, image, alt, icon }) => (
-          <article key={title} className="overflow-hidden rounded-2xl bg-[#f3f8f6] transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <img className="h-36 w-full object-cover" src={image} alt={alt} loading="lazy" />
+          <article key={title} className="group overflow-hidden rounded-2xl bg-[#f3f8f6] shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl motion-reduce:transition-none">
+            <img className="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-105 motion-reduce:transition-none" src={image} alt={alt} loading="lazy" />
             <div className="px-5 pb-5 pt-4 text-center">
               <div className="mx-auto mb-2 flex h-9 w-9 items-center justify-center rounded-full bg-[#e0f2d8] text-[#378446]">
                 <Icon name={icon} className="h-5 w-5" />
